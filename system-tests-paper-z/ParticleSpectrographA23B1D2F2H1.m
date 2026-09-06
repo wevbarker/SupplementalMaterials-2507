@@ -1,0 +1,8 @@
+<<xAct`PSALTer`;
+DefConstantSymbol[K1,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(1\)]\)"];
+DefConstantSymbol[K3,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(3\)]\)"];
+DefConstantSymbol[K4,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(4\)]\)"];
+DefConstantSymbol[K15,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(15\)]\)"];
+DefField[A23Field[-a,-b,-c],Antisymmetric[{-b,-c}],PrintAs->"\[ScriptCapitalK]",PrintSourceAs->"\[ScriptCapitalJ]"];
+ParticleSpectrum[K1*CD[-b][A23Field[d,-c,-d]]*CD[c][A23Field[a,-a,b]]-K1*CD[-c][A23Field[d,-b,-d]]*CD[c][A23Field[a,-a,b]]+K3*CD[-b][A23Field[a,b,c]]*CD[-d][A23Field[-a,-c,d]]+K4*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[-b,-c,d]]+3*K15*CD[-b][A23Field[a,b,c]]*CD[-d][A23Field[-c,-a,d]]-K3*CD[-b][A23Field[a,b,c]]*CD[-d][A23Field[-c,-a,d]]-3*K15*CD[c][A23Field[a,-a,b]]*CD[-d][A23Field[-c,-b,d]]-(9*K15*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]])/4+(K3*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]])/2+(K4*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]])/2+K15*CD[-d][A23Field[-a,-b,-c]]*CD[d][A23Field[a,b,c]]+K15*CD[-d][A23Field[-b,-a,-c]]*CD[d][A23Field[a,b,c]],TheoryName->"A23B1D2F2H1",Method->"Hard",ShowPropagator->True,AspectRatio->Portrait,MaxLaurentDepth->1];
+Quit[];

@@ -1,0 +1,13 @@
+<<xAct`PSALTer`;
+DefConstantSymbol[K1,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(1\)]\)"];
+DefConstantSymbol[K2,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(2\)]\)"];
+DefConstantSymbol[K3,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(3\)]\)"];
+DefConstantSymbol[K4,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(4\)]\)"];
+DefConstantSymbol[K6,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(6\)]\)"];
+DefConstantSymbol[K15,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(15\)]\)"];
+DefConstantSymbol[K16,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalK]\)\(\*OverscriptBox[\(\[Kappa]\),\((4)\)]\),\(16\)]\)"];
+DefConstantSymbol[M1,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalM]\)\(\*OverscriptBox[\(\[Kappa]\),\((2)\)]\),\(1\)]\)"];
+DefConstantSymbol[M2,PrintAs->"\!\(\*SubscriptBox[\(\[ScriptCapitalM]\)\(\*OverscriptBox[\(\[Kappa]\),\((2)\)]\),\(2\)]\)"];
+DefField[A23Field[-a,-b,-c],Antisymmetric[{-b,-c}],PrintAs->"\[ScriptCapitalK]",PrintSourceAs->"\[ScriptCapitalJ]"];
+ParticleSpectrum[M1*A23Field[-a,-b,-c]*A23Field[a,b,c]+M2*A23Field[a,b,c]*A23Field[-b,-a,-c]+(2*M1*A23Field[a,-a,b]*A23Field[c,-b,-c])/3+(M2*A23Field[a,-a,b]*A23Field[c,-b,-c])/3+K1*CD[-b][A23Field[d,-c,-d]]*CD[c][A23Field[a,-a,b]]+K2*CD[-c][A23Field[d,-b,-d]]*CD[c][A23Field[a,-a,b]]+K3*CD[-b][A23Field[a,b,c]]*CD[-d][A23Field[-a,-c,d]]+K4*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[-b,-c,d]]+K6*CD[-b][A23Field[a,b,c]]*CD[-d][A23Field[-c,-a,d]]+4*K15*CD[c][A23Field[a,-a,b]]*CD[-d][A23Field[-c,-b,d]]+2*K16*CD[c][A23Field[a,-a,b]]*CD[-d][A23Field[-c,-b,d]]-6*K2*CD[c][A23Field[a,-a,b]]*CD[-d][A23Field[-c,-b,d]]+3*K15*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]]+(3*K16*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]])/2-(9*K2*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]])/2+(K3*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]])/2+(K4*CD[-a][A23Field[a,b,c]]*CD[-d][A23Field[d,-b,-c]])/2+K15*CD[-d][A23Field[-a,-b,-c]]*CD[d][A23Field[a,b,c]]+K16*CD[-d][A23Field[-b,-a,-c]]*CD[d][A23Field[a,b,c]],TheoryName->"A23C4",Method->"Hard",ShowPropagator->True,AspectRatio->Portrait,MaxLaurentDepth->1];
+Quit[];
